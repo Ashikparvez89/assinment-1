@@ -28,7 +28,22 @@ span {
 
 
 
+.btn-primary {
+    color: white;
+    background: red;
+    padding: 15px 47px;
+    font-size: 20px;
+    font-weight: 600;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .4s;
+}
 
+.btn-primary:hover {
+    color: red;
+    background-color: white;
+}
 
 /* -------------- */
 
@@ -38,9 +53,12 @@ span {
 
 
 
+/* --------------- */
 
+/* -- banner-section  */
 
-/* <!-- banner-section --> */
+/* --------------- */
+
 
 
 .banner {
@@ -91,10 +109,11 @@ span {
 }
 
 
-
+/* --------------- */
 
 /* <!-- deal-section --> */
 
+/* --------------- */
 
 .deal {
     text-align: center;
@@ -123,7 +142,14 @@ span {
 }
 
 
+
+/* --------------- */
+
 /* <!-- hero-section --> */
+
+/* --------------- */
+
+
 .hero-section {
     padding: 40px 0;
 }
@@ -186,7 +212,13 @@ span {
     margin-right: 120px;
 }
 
+
+/* --------------- */
+
 /* <!-- announce-section --> */
+
+/* --------------- */
+
 
 .announce-section {
     padding: 100px 0;
@@ -211,9 +243,19 @@ span {
     color: red;
 }
 
+.announce-text button {
+    margin-top: 40px;
+}
 
+
+
+/* --------------- */
 
 /* <!-- offer-section --> */
+
+/* --------------- */
+
+
 .offer-section {
     padding: 50px 0;
     display: flex;
@@ -222,7 +264,6 @@ span {
     gap: 6rem;
 }
 
-.offer-left {}
 
 .offer-left span {
     color: #F00;
@@ -247,12 +288,11 @@ span {
 }
 
 .offer-mid {
-    border: 10px solid red;
+    border: 10px solid rgb(255, 4, 4);
     padding: 40px;
     border-radius: 100%;
 }
 
-.offer-right {}
 
 .offer-right span {
     color: #F00;
@@ -272,10 +312,13 @@ span {
     margin: 25px 0;
 }
 
-.offer-right img {}
 
+/* --------------- */
 
 /* <!-- discount-section --> */
+
+/* --------------- */
+
 
 .discount {
     padding: 120px 0;
@@ -349,7 +392,7 @@ span {
     z-index: -1;
 }
 
-.d-img-left {}
+
 
 .d-img-right {
     position: relative;
@@ -364,16 +407,19 @@ span {
 
 
 
-
+/* --------------- */
 
 /* <!-- product-section --> */
+
+/* --------------- */
+
 
 .product-section {
     padding: 100px 0;
 }
 
 
-.product-title {}
+
 
 
 .product-title span {
@@ -407,9 +453,80 @@ span {
 
 
 
+.product-img {
+    position: relative;
+}
 
+.product-h-content {
+    position: absolute;
+    bottom: 85px;
+    left: 30%;
+    margin: auto;
+    visibility: hidden;
+    transition: .2s ease-in-out;
+    text-align: center;
+    transform: translateY(80px);
+}
+
+
+.product-inner:hover .product-h-content{
+    visibility: visible;
+    transform: translateX(0);
+}
+
+
+.product-h-content span {
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    display: block;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+
+.product-h-content button{
+    color: white;
+    padding: 10px 20px;
+    background: rgb(246, 4, 4);
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 500;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+}
+
+
+.product-img::before{
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: rgba(20, 30, 50, .5);
+    border-radius: 16px;
+    overflow: hidden;
+    visibility: hidden;
+    transition: .2s ease-in-out;
+    transform: translateX(-20px);
+    overflow: hidden;
+}
+.product-inner:hover .product-img::before{
+    visibility: visible;
+    transform: translateY(0);
+    cursor: pointer;
+}
+
+
+
+
+
+/* --------------- */
 
 /* <!-- newsletter-section --> */
+
+/* --------------- */
 
 
 
@@ -424,7 +541,7 @@ span {
     border-radius: 16px;
 }
 
-.newsletter-content img {}
+
 
 .newsletter-content h1 {
     margin: 30px 0;
@@ -434,7 +551,7 @@ span {
 }
 
 .newsletter-content p {
-    color: rgba(7, 2, 17, 0.60);
+    color: rgba(4, 0, 11, 0.493);
     font-size: 20px;
     line-height: 32px;
     width: 896px;
@@ -457,6 +574,7 @@ span {
     font-weight: 400;
 }
 
+
 .newsletter-box button {
     background: red;
     color: white;
@@ -468,50 +586,62 @@ span {
     border-radius: 0 300px 300px 0;
     font-weight: bold;
     border: none;
+    cursor: pointer;
 }
 
 
 
+/* --------------- */
+
 /* <!-- footer-section --> */
 
+/* --------------- */
 
 
-.footer-section{
+
+
+.footer-section {
     padding: 100px 0;
     background: #070211;
 }
 
-.footer-inner-content{
+.footer-inner-content {
     color: white;
 }
-.footer-inner-content hr{
-    color: rgba(255, 255, 255, 0.15); 
+
+.footer-inner-content hr {
+    color: rgba(255, 255, 255, 0.15);
     margin: 50px 0;
 }
 
-.footer-info{
+.footer-info {
     display: flex;
     justify-content: space-between;
 
 }
 
-.footer-address p{
+.footer-address p {
     margin-bottom: 15px;
 }
-.footer-detail-address{
+
+.footer-detail-address {
     display: inline-flex;
     margin-bottom: 10px;
 }
-.footer-detail-address img{
+
+.footer-detail-address img {
     margin-right: 10px;
 }
-.footer-call{
+
+.footer-call {
     display: flex;
 }
-.footer-call img{
+
+.footer-call img {
     margin-right: 10px;
 }
-.social-menu{
+
+.social-menu {
     display: flex;
     margin: auto;
     width: 85px;
@@ -521,6 +651,6 @@ span {
 
 }
 
-.social-menu li{
+.social-menu li {
     list-style: none;
 }
