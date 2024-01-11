@@ -665,6 +665,12 @@ span {
 
 
 @media screen and (max-width:576px) {
+
+    .container{
+        max-width: 100%;
+        margin: auto;
+    }
+
     .banner {
         padding: 10px;
 
