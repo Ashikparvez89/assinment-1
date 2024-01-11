@@ -1,0 +1,22 @@
+
+/* ---------- */
+/* responsive css */
+/* ---------- */
+
+@media screen and (max-width:576px){
+    .banner{
+        padding: 10px;
+
+    }
+    .banner-inner{
+        padding: 30px;
+    }
+    .banner-inner h2{
+        font-size: 20em;
+        color: blue;
+    }
+    .banner-inner h1{
+        font-size: 10em;
+        color: blueviolet;
+    }
+}
