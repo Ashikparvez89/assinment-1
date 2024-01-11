@@ -741,7 +741,10 @@ span {
     .offer-left {
         text-align: center;
     }
-
+    .offer-left p{
+        max-width: 70%;
+        margin: auto;
+    }
     .offer-mid {
         border: 10px solid rgb(255, 4, 4);
         padding: 20px;
@@ -755,6 +758,11 @@ span {
 
     .offer-right {
         text-align: center;
+    }
+
+    .offer-right p{
+        width: 70%;
+        margin: auto;
     }
 
     .discount-content{
@@ -771,6 +779,9 @@ span {
     .discount-bg{
         bottom: 8px;
     }
+
+  
+
 
     .product-title{
         text-align: center;
@@ -798,13 +809,13 @@ span {
         text-align: center;
     }
     .product-img img{
-        max-width: 50%;
+        max-width: 70%;
         margin: auto;
     }
     .product-img::before {
-        width: 50%;
+        width: 70%;
         height: 99%;
-        transform: translateX(50%);
+        transform: translateX(22%);
         background: rgba(20, 30, 50, .5);
         border-radius: 16px;
         overflow: hidden;
@@ -832,4 +843,6 @@ span {
     .footer-btn{
         margin-top: 3em;
     }
+
+
 }
