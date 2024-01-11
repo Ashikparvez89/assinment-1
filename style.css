@@ -692,8 +692,6 @@ span {
         max-width: 100%;
     }
 
-    .hero-section {}
-
     .hero-inner-content {
         flex-direction: column-reverse;
         background-size: contain;
@@ -796,11 +794,17 @@ span {
     .product-h-content span{
         color: white;
     }
-
+    .product-img{
+        text-align: center;
+    }
+    .product-img img{
+        max-width: 50%;
+        margin: auto;
+    }
     .product-img::before {
-        width: 100%;
+        width: 50%;
         height: 99%;
-        transform: translateX(0px);
+        transform: translateX(50%);
         background: rgba(20, 30, 50, .5);
         border-radius: 16px;
         overflow: hidden;
@@ -814,7 +818,7 @@ span {
         margin-bottom: 3em;
     }
     .newsletter-box input{
-        width: 7em;
+        width: 30%;
     }
     .footer-info{
         flex-direction: column;
